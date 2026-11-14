@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Study<span>Hub</span></h2>
+
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">My Courses</a>
+                <a href="#">Assignments</a>
+                <a href="#">Calendar</a>
+                <a href="#">Messages</a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Student Portal</p>
+                <small>Learn something new every day!</small>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Navigation -->
+            <header class="topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back! Here's your learning overview.</p>
+                </div>
+
+                <div class="profile">
+                    <!-- <span>🔔</span> -->
+                    <div class="avatar">JB</div>
+                    <span>Jamebie</span>
+                </div>
+            </header>
+
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <p>Total Courses</p>
+                    <h2>08</h2>
+                    <span>Currently enrolled</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Completed Tasks</p>
+                    <h2>24</h2>
+                    <span>Keep it up!</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Study Hours</p>
+                    <h2>32h</h2>
+                    <span>This month</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Average Score</p>
+                    <h2>85%</h2>
+                    <span>Excellent progress</span>
+                </div>
+
+            </section>
+
+            <!-- Main Dashboard Sections -->
+            <section class="content-grid">
+
+                <!-- Study Progress -->
+                <div class="card progress-card">
+                    <div class="card-header">
+                        <h2>Weekly Study Progress</h2>
+                        <span>This Week</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="bar-item">
+                            <div class="bar" style="height: 45%"></div>
+                            <span>Mon</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 75%"></div>
+                            <span>Tue</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 55%"></div>
+                            <span>Wed</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 90%"></div>
+                            <span>Thu</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 65%"></div>
+                            <span>Fri</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 80%"></div>
+                            <span>Sat</span>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar" style="height: 35%"></div>
+                            <span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Tasks -->
+                <div class="card tasks-card">
+                    <h2>Upcoming Tasks</h2>
+
+                    <div class="task">
+                        <div>
+                            <h3>Database Assignment</h3>
+                            <p>Database Design</p>
+                        </div>
+                        <span class="pending">Pending</span>
+                    </div>
+
+                    <div class="task">
+                        <div>
+                            <h3>C++ Exercise</h3>
+                            <p>Object-Oriented Programming</p>
+                        </div>
+                        <span class="done">Done</span>
+                    </div>
+
+                    <div class="task">
+                        <div>
+                            <h3>HTML Project</h3>
+                            <p>Web Design</p>
+                        </div>
+                        <span class="pending">Pending</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Activities -->
+            <section class="card activities">
+                <h2>Recent Activities</h2>
+
+                <div class="activity">
+                    <div>
+                        <h3>Completed C++ Exercise</h3>
+                        <p>Object-Oriented Programming</p>
+                    </div>
+                    <span>Today</span>
+                </div>
+
+                <div class="activity">
+                    <div>
+                        <h3>Submitted Database Assignment</h3>
+                        <p>Database Analysis and Design</p>
+                    </div>
+                    <span>Yesterday</span>
+                </div>
+
+                <div class="activity">
+                    <div>
+                        <h3>Joined Web Design Course</h3>
+                        <p>HTML and CSS</p>
+                    </div>
+                    <span>2 days ago</span>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

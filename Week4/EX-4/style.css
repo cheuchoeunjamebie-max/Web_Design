@@ -1,0 +1,335 @@
+/* 1. General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #263247;
+}
+
+/* 2. Main Dashboard Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+/* 3. Sidebar */
+.sidebar {
+    background-color: #172554;
+    color: white;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 30px;
+    color: #cbd5e1;
+}
+
+.sidebar-bottom small {
+    display: block;
+    margin-top: 8px;
+}
+
+/* 4. Main Content */
+.main-content {
+    padding: 30px;
+    min-width: 0;
+}
+
+/* 5. Top Navigation */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.topbar p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* 6. Statistics Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.stat-card p {
+    color: #64748b;
+}
+
+.stat-card h2 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: #2563eb;
+}
+
+.stat-card span {
+    color: #16a34a;
+    font-size: 13px;
+}
+
+/* 7. Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+/* 8. Study Progress Chart */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-header span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.chart {
+    height: 220px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 12px;
+    padding-top: 20px;
+}
+
+.bar-item {
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar {
+    width: 100%;
+    max-width: 35px;
+    background-color: #3b82f6;
+    border-radius: 6px 6px 0 0;
+    transition: 0.3s;
+}
+
+.bar:hover {
+    background-color: #1d4ed8;
+}
+
+.bar-item span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* 9. Upcoming Tasks */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.task h3,
+.activity h3 {
+    font-size: 14px;
+}
+
+.task p,
+.activity p {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.pending,
+.done {
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.done {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+/* 10. Recent Activities */
+.activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity > span {
+    color: #64748b;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* 11. Tablet Responsive Design */
+@media (max-width: 1024px) {
+
+    .dashboard {
+        grid-template-columns: 190px 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 12. Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .sidebar nav a {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .chart {
+        gap: 6px;
+    }
+
+    .bar-item span {
+        font-size: 10px;
+    }
+}
